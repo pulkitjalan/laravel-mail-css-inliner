@@ -5,6 +5,7 @@ namespace PulkitJalan\LaravelMailCssInliner;
 use Illuminate\Contracts\Mail\Mailer;
 use Illuminate\Support\ServiceProvider;
 use Openbuildings\Swiftmailer\CssInlinerPlugin;
+use TijsVerkoyen\CssToInlineStyles\CssToInlineStyles;
 
 class LaravelMailCssInlinerServiceProvider extends ServiceProvider
 {
@@ -13,9 +14,13 @@ class LaravelMailCssInlinerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $converter = new CssToInlineStyles();
+        $converter->setUseInlineStylesBlock(true);
+        $converter->setStripOriginalStyleTags(true);
+
         $this->app[Mailer::class]
             ->getSwiftMailer()
-            ->registerPlugin(new CssInlinerPlugin());
+            ->registerPlugin(new CssInlinerPlugin($converter));
     }
 
     /**
