@@ -1,0 +1,22 @@
+{
+    "name": "pulkitjalan/laravel-mail-css-inliner",
+    "description": "Automatically inline CSS for Laravel emails",
+    "homepage": "https://github.com/pulkitjalan/laravel-mail-css-inliner",
+    "keywords": ["laravel", "mailer", "css", "swiftmailer"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pulkit Jalan"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "~5.0",
+        "openbuildings/swiftmailer-css-inliner": "0.3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "PulkitJalan\\LaravelMailCssInliner\\": "src/"
+        }
+    }
+}
