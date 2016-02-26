@@ -18,7 +18,7 @@ Install via [composer](https://getcomposer.org/) - edit your `composer.json` to 
 
 ```js
 "require": {
-    "pulkitjalan/laravel-mail-css-inliner": "0.1.*"
+    "pulkitjalan/laravel-mail-css-inliner": "0.2.*"
 }
 ```
 
