@@ -7,6 +7,8 @@ Laravel Mail CSS Inliner
 [![Latest Version](http://img.shields.io/packagist/v/pulkitjalan/laravel-mail-css-inliner.svg?style=flat-square)](https://packagist.org/packages/pulkitjalan/laravel-mail-css-inliner)
 [![Total Downloads](https://img.shields.io/packagist/dt/pulkitjalan/laravel-mail-css-inliner.svg?style=flat-square)](https://packagist.org/packages/pulkitjalan/laravel-mail-css-inliner)
 
+Laravel service provider to register the [openbuildings/swiftmailer-css-inliner](https://github.com/openbuildings/swiftmailer-css-inliner) css inliner plugin.
+
 ## Requirements
 
 - PHP >= 5.5.9
